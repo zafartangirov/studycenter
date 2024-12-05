@@ -1,12 +1,9 @@
 package uz.pdp.demo9.studycenter;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.math.BigDecimal;
 
 @Data
 @AllArgsConstructor
@@ -20,4 +17,5 @@ public class Payment {
     private Long amount;
     @ManyToOne
     private Student student;
+
 }
