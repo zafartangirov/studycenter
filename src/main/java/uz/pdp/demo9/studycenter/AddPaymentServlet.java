@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.net.http.HttpClient;
 
 import static uz.pdp.demo9.MyListener.EMF;
 
@@ -32,7 +31,7 @@ public class AddPaymentServlet extends HttpServlet {
             );
             entityManager.persist(payment);
             entityManager.getTransaction().commit();
-            resp.sendRedirect("/Student.jsp?groupId="+groupId);
+            resp.sendRedirect("/Payment.jsp?groupId="+groupId);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
