@@ -4,6 +4,7 @@ package uz.pdp.demo9.studycenter;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Data
@@ -18,4 +19,5 @@ public class Student {
     private String fullName;
     @ManyToOne
     private Groups groups;
+
 }
